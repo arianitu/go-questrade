@@ -10,8 +10,8 @@ type Account struct {
 	Type              string
 	Number            string
 	Status            string
-	isPrimary         bool
-	isBilling         bool
+	IsPrimary         bool
+	IsBilling         bool
 	ClientAccountType string
 }
 
@@ -32,7 +32,7 @@ type Position struct {
 	OpenPnL            float64
 	TotalCost          float64
 	IsRealTime         bool
-	isUnderReorg       bool
+	IsUnderReorg       bool
 }
 
 type Positions struct {
