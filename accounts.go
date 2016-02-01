@@ -67,7 +67,7 @@ type Execution struct {
 	OrderId                  int
 	OrderChainId             int
 	ExchangeExecId           string
-	Timestamp                string
+	Timestamp                time.Time
 	Notes                    string
 	Venue                    string
 	TotalCost                float64
@@ -88,9 +88,9 @@ type Activities struct {
 }
 
 type Activity struct {
-	TradeDate       string
-	TransactionDate string
-	SettlementDate  string
+	TradeDate       time.Time
+	TransactionDate time.Time
+	SettlementDate  time.Time
 	Action          string
 	Symbol          string
 	SymbolId        uint64

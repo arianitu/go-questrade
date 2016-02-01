@@ -1,5 +1,9 @@
 package questrade
 
+import (
+	"time"
+)
+
 type OrderLeg struct {
 }
 
@@ -23,12 +27,12 @@ type Order struct {
 	LastExecPrice            float64
 	Source                   string
 	TimeInForce              string
-	GtdDate                  string
+	GtdDate                  time.Time
 	State                    string
 	ClientReasonStr          string
 	ChainId                  int
-	CreationTime             string
-	UpdateTime               string
+	CreationTime             time.Time
+	UpdateTime               time.Time
 	Notes                    string
 	PrimaryRoute             string
 	SecondaryRoute           string
